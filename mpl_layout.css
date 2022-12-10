@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+   Tutorial 13
+   Case Problem 1
+
+   Monroe Public Library Style Sheet
+
+   Filename: mpl_layout.css
+   
+*/
+
+/* HTML and Body Styles */
+
+html {
+  background: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background: white;
+  max-width: 1024px;
+  min-width: 420px;
+  margin: 50px auto;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+/* Top Navigation Styles */
+
+nav#top ul {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: transparent;
+  height: 50px;
+}
+
+nav#top ul li {
+  -webkit-flex: 0 0 120px;
+  flex: 0 0 120px;
+  margin: 5px;
+}
+
+nav#top ul li a {
+  color: rgb(61, 61, 61);
+  display: block;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 50% 0%;
+}
+
+nav#top input {
+  font-size: 1em;
+}
+
+nav#top ul li a:hover,
+nav#top ul li a:active {
+  text-shadow: 0px 0px 2px rgb(172, 128, 84), 0px 0px 15px rgb(172, 128, 84);
+}
+
+/* Input Box Style */
+
+header input {
+  width: 240px;
+  height: 24px;
+  display: block;
+  float: left;
+  padding: 1px 4px;
+  border-width: 2px;
+  font-size: 1.3em;
+  margin: 0px 10px;
+}
+
+header label {
+  display: block;
+  float: left;
+  height: 28px;
+}
+
+header label img {
+  display: block;
+  margin-right: 5px;
+}
+
+/* Header Styles */
+
+body > header {
+  width: 100%;
+  position: relative;
+}
+
+body > header > img {
+  margin-left: 10px;
+}
+
+body > header > div {
+  margin: 10px 0px;
+  height: 50px;
+}
+
+/* Middle Navigation Styles */
+
+nav#middle ul {
+  clear: left;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgb(0, 104, 141);
+  height: 40px;
+  box-shadow: 0px 5px 15px rgb(51, 51, 51);
+}
+
+nav#middle ul li {
+  -webkit-flex: 0 1 80px;
+  flex: 0 1 80px;
+  margin: 10px;
+}
+
+nav#middle ul li a {
+  color: rgb(255, 255, 199);
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 50% 0%;
+}
+
+nav#middle ul li a:hover,
+nav#middle ul li a:active {
+  color: rgb(255, 255, 3);
+  text-shadow: 0px 0px 2px black, 0px 0px 8px black;
+}
+
+/* Section Styles */
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  background: url(mpl_back.png) no-repeat bottom right/70%;
+}
+
+section nav#left {
+  -webkit-flex: 0 1 220px;
+  flex: 0 1 220px;
+}
+
+section article {
+  -webkit-flex: 1 1 480px;
+  flex: 1 1 480px;
+}
+
+/* Left Navigation Styles */
+
+nav#left {
+  background-color: rgb(130, 215, 247);
+  padding: 20px 0px 20px 10px;
+  box-shadow: 5px 0px 15px rgb(51, 51, 51);
+}
+
+nav#left ul li {
+  line-height: 1.5em;
+  margin: 0px 0px 0px 8px;
+}
+
+nav#left ul li.newgroup {
+  margin-top: 25px;
+}
+
+nav#left ul li a {
+  color: rgb(75, 51, 6);
+}
+
+nav#left ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Article Styles */
+
+article {
+  padding-left: 20px;
+}
+
+article h1 {
+  font-size: 3em;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    sans-serif;
+  margin: 30px 0px 15px 20px;
+  letter-spacing: 0.05em;
+  color: rgb(142, 92, 7);
+}
+
+article p {
+  font-size: 1.2em;
+  margin: 20px 0px 0px 20px;
+  padding-bottom: 10px;
+  line-height: 1.2em;
+}
+
+article table td {
+  height: 40px;
+  vertical-align: center;
+}
+
+article select {
+  display: inline-block;
+  margin-left: 15px;
+  width: 250px;
+}
+
+/* Footer Styles */
+
+footer {
+  width: 100%;
+}
+
+footer p {
+  color: rgb(211, 211, 211);
+  font-size: 0.9em;
+  text-align: center;
+  background-color: rgb(75, 51, 6);
+  margin: 0px;
+  padding: 10px 0px;
+}
